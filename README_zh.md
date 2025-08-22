@@ -19,7 +19,7 @@
 
 ## 安装
 
-```python
+```bash
 pip install mkdocs-recently-updated-docs
 ```
 
@@ -48,7 +48,7 @@ plugins:
 
 只需在 md 文档中任意位置写下这一行：
 
-```html
+```markdown
 <!-- RECENTLY_UPDATED_DOCS -->
 ```
 
