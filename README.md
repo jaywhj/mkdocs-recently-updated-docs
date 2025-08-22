@@ -54,12 +54,14 @@ Just write this line in your md document anywhere:
 
 ## Custom template
 
-See templates directory
+See [templates](https://github.com/jaywhj/mkdocs-recently-updated-docs/tree/main/mkdocs_recently_updated_docs/templates) directory
 
 <br />
 
 ## Other plugins
 
-[mkdocs-document-dates](https://github.com/jaywhj/mkdocs-document-dates): A new generation MkDocs plugin for displaying exact **creation time, last update time, authors, email** of documents
+[mkdocs-document-dates](https://github.com/jaywhj/mkdocs-document-dates)
+
+A new generation MkDocs plugin for displaying exact **creation time, last update time, authors, email** of documents
 
 ![render](render.gif)

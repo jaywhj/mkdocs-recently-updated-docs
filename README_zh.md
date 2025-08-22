@@ -9,7 +9,7 @@
 ## 特性
 
 - 支持整体列表显示最近更新的文档
-- 灵活的显示位置（`侧边栏` 或 `md 文档中`）
+- 灵活的显示位置（`侧边栏` 或 `md文档中`）
 - 丰富的模板示例
 - 适用于任何环境（no-Git, Git, all CI/CD build systems, etc）
 
@@ -54,12 +54,14 @@ plugins:
 
 ## 自定义模板
 
-请参阅 templates 目录
+请参阅 [templates](https://github.com/jaywhj/mkdocs-recently-updated-docs/tree/main/mkdocs_recently_updated_docs/templates) 目录
 
 <br />
 
 ## 其它插件
 
-[mkdocs-document-dates](https://github.com/jaywhj/mkdocs-document-dates): 新一代 MkDocs 插件，用于显示文档的确切**创建时间、上次更新时间、作者、电子邮件**
+[mkdocs-document-dates](https://github.com/jaywhj/mkdocs-document-dates)
+
+新一代 MkDocs 插件，用于显示文档的确切**创建时间、上次更新时间、作者、电子邮件**
 
 ![render](render.gif)
