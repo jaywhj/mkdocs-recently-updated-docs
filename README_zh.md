@@ -19,7 +19,7 @@
 
 ## 安装
 
-```bash
+```python
 pip install mkdocs-recently-updated-docs
 ```
 
@@ -41,14 +41,14 @@ plugins:
       exclude:           # 排除文件列表
         - index.md       # 排除指定文件
         - drafts/*       # 排除 drafts 目录下所有文件，包括子目录
-      template: templates/recently_updated.html    # 自定义渲染模板
+      template: templates/recently_updated_list.html    # 自定义渲染模板
 ```
 
 ## 使用方法
 
 只需在 md 文档中任意位置写下这一行：
 
-```markdown
+```html
 <!-- RECENTLY_UPDATED_DOCS -->
 ```
 

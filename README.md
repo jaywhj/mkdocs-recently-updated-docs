@@ -41,7 +41,7 @@ plugins:
       exclude:           # List of excluded files
         - index.md       # Exclude specific file
         - drafts/*       # Exclude all files in drafts folder, including subfolders
-      template: templates/recently_updated.html    # Custom rendering template
+      template: templates/recently_updated_list.html    # Custom rendering template
 ```
 
 ## Usage
