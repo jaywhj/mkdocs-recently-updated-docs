@@ -1,0 +1,48 @@
+<style>
+.recently-modified {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px;
+    margin: 20px 0;
+    padding: 0;
+}
+.recently-modified-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid rgba(142, 142, 142, 0.15);
+    border-radius: 2px;
+    min-height: 40px;
+    transition: box-shadow 0.2s ease;
+}
+.recently-modified-item:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.recently-modified-item a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    flex: 1;
+    text-decoration: none;
+    word-break: break-word;
+    color: #0077cc; 
+}
+.recently-modified-item span {
+    flex: 0 0 90px;
+    text-align: right;
+    color: rgba(142, 142, 142, 0.5);
+    font-size: 0.85rem;
+}
+.md-main .recently-modified-item span {
+    font-size: 0.7rem;
+}
+</style>
+<div class="recently-modified">
+    {%- for mtime, rel_path, title, url in recent_docs %}
+    <div class="recently-modified-item">
+        <a href="{{ url }}" target="_blank">{{ title }} <span>{{ mtime[:10] }}</span></a>
+    </div>
+    {%- endfor %}
+</div>
