@@ -4,11 +4,11 @@ English | [简体中文](README_zh.md)
 
 
 
-Use a line of code to display a list of recently updated documents
+One line of code to display a list of recently updated documents
 
 ## Features
 
-- Support the overall list to display the recently updated documents
+- Supports display of recently updated documents in an overall list
 - Flexible display position (`sidebar` or `in md document`)
 - Rich template examples
 - Works well for any environment (no-Git, Git, all CI/CD build systems, etc)
