@@ -13,7 +13,7 @@ One line of code to display a list of recently updated documents
 - Rich template examples
 - Works well for any environment (no-Git, Git, all CI/CD build systems, etc)
 
-## Showcases
+## Preview
 
 ![recently-updated](recently-updated.png)
 

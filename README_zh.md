@@ -13,7 +13,7 @@
 - 丰富的模板示例
 - 适用于任何环境（no-Git, Git, all CI/CD build systems, etc）
 
-## 效果图
+## 预览
 
 ![recently-updated](recently-updated.png)
 
