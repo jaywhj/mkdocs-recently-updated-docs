@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mkdocs-recently-updated-docs"
+version = "1.0"
+authors = [
+    {name = "Aaron Wang", email = "aaronwqt@gmail.com"},
+]
+description = "A MkDocs plugin to show recently updated documents"
+readme = "README.md"
+requires-python = ">=3.7"
+license = {text = "MIT"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "mkdocs>=1.1.0",
+    "mkdocs_document_dates>=3.4",
+]
+
+[project.entry-points."mkdocs.plugins"]
+"recently-updated" = "mkdocs_recently_updated_docs.plugin:RecentlyUpdatedPlugin"
+
+[tool.setuptools.package-data]
+"mkdocs_recently_updated_docs" = ["templates/*"]
+
+[project.urls]
+"Homepage" = "https://github.com/jaywhj/mkdocs-recently-updated-docs"
+"Bug Tracker" = "https://github.com/jaywhj/mkdocs-recently-updated-docs/issues"
