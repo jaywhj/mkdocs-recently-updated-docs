@@ -29,4 +29,3 @@ dependencies = [
 
 [project.urls]
 "Homepage" = "https://github.com/jaywhj/mkdocs-recently-updated-docs"
-"Bug Tracker" = "https://github.com/jaywhj/mkdocs-recently-updated-docs/issues"
