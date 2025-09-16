@@ -32,7 +32,7 @@ plugins:
   - recently-updated
 ```
 
-或者，你要个性化配置：
+或者，完整配置：
 
 ```yaml
 plugins:

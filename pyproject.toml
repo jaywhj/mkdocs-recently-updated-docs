@@ -29,3 +29,4 @@ dependencies = [
 
 [project.urls]
 "Homepage" = "https://github.com/jaywhj/mkdocs-recently-updated-docs"
+"Documentation" = "https://jaywhj.netlify.app/document-dates-en"

@@ -32,7 +32,7 @@ plugins:
   - recently-updated
 ```
 
-Or, personalize the configuration:
+Or, full configuration:
 
 ```yaml
 plugins:
