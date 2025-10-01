@@ -2,7 +2,7 @@ from jinja2 import Environment, FileSystemLoader, select_autoescape
 from pathlib import Path
 from mkdocs.plugins import BasePlugin
 from mkdocs.config import config_options
-from mkdocs_document_dates.utils import get_recently_modified_files
+from mkdocs_document_dates.utils import get_recently_updated_files
 
 
 class RecentlyUpdatedPlugin(BasePlugin):
@@ -22,11 +22,12 @@ class RecentlyUpdatedPlugin(BasePlugin):
         exclude_list = self.config.get('exclude')
         template_path = self.config.get("template")
 
+        docs_dir = Path(config['docs_dir'])
+
         # 获取 docs 目录下最近更新的文档
-        recently_modified_files = get_recently_modified_files(files, exclude_list, limit)
+        _, recently_modified_files = get_recently_updated_files(docs_dir, files, exclude_list, limit, True)
 
         # 渲染HTML
-        docs_dir = Path(config['docs_dir'])
         self.recent_docs_html = self._render_recently_updated_html(docs_dir, template_path, recently_modified_files)
 
         return nav
