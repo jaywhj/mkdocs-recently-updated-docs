@@ -58,6 +58,6 @@ class RecentlyUpdatedPlugin(BasePlugin):
         return template.render(recent_docs=recently_updated_data)
 
     def on_page_markdown(self, markdown, page, config, files):
-        if '<!-- RECENTLY_UPDATED_DOCS -->' in markdown:
+        if '\n<!-- RECENTLY_UPDATED_DOCS -->' in markdown:
             markdown = markdown.replace('<!-- RECENTLY_UPDATED_DOCS -->', self.recent_docs_html or '')
         return markdown

@@ -46,7 +46,7 @@ plugins:
 
 ## Usage
 
-Just write this line in your md document anywhere:
+Simply write this line anywhere in your md document:
 
 ```markdown
 <!-- RECENTLY_UPDATED_DOCS -->
