@@ -59,5 +59,5 @@ class RecentlyUpdatedPlugin(BasePlugin):
 
     def on_page_markdown(self, markdown, page, config, files):
         if '\n<!-- RECENTLY_UPDATED_DOCS -->' in markdown:
-            markdown = markdown.replace('<!-- RECENTLY_UPDATED_DOCS -->', self.recent_docs_html or '')
+            markdown = markdown.replace('\n<!-- RECENTLY_UPDATED_DOCS -->', self.recent_docs_html or '')
         return markdown
