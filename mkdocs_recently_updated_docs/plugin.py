@@ -20,7 +20,7 @@ class RecentlyUpdatedPlugin(BasePlugin):
     def on_nav(self, nav, config, files):
         limit = self.config.get('limit')
         exclude_list = self.config.get('exclude')
-        template_path = self.config.get("template")
+        template_path = self.config.get('template')
 
         docs_dir = Path(config['docs_dir'])
 
