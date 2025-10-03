@@ -8,10 +8,10 @@
 
 ## 特性
 
-- 支持整体列表显示最近更新的文档
+- 支持列表显示最近更新的文档
 - 灵活的显示位置（`侧边栏` 或 `md文档中`）
 - 丰富的模板示例
-- 适用于任何环境（no-Git, Git, all CI/CD build systems, etc）
+- 适用于任何环境（no-Git, Git, all CI/CD build systems, etc.）
 
 ## 预览
 

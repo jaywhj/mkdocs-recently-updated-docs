@@ -8,10 +8,10 @@ One line of code to display a list of recently updated documents
 
 ## Features
 
-- Supports display of recently updated documents in an overall list
+- Support list display of recently updated documents
 - Flexible display position (`sidebar` or `in md document`)
 - Rich template examples
-- Works well for any environment (no-Git, Git, all CI/CD build systems, etc)
+- Works well for any environment (no-Git, Git, all CI/CD build systems, etc.)
 
 ## Preview
 
