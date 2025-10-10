@@ -4,14 +4,15 @@ English | [简体中文](README_zh.md)
 
 
 
-One line of code to display a list of recently updated documents
+One line of code to display a list of recently updated documents in MkDocs
 
 ## Features
 
-- Support list display of recently updated documents
-- Flexible display position (`sidebar` or `in md document`)
-- Rich template examples
-- Works well for any environment (no-Git, Git, all CI/CD build systems, etc.)
+- Display recently updated documents in reverse chronological order
+- Support exclude specified files or folders
+- Support custom display quantity
+- Support custom rendering template
+- Works well for any environment (no-Git, Git, Docker, all CI/CD build systems, etc.)
 
 ## Preview
 
