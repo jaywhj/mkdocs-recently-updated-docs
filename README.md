@@ -8,7 +8,7 @@ One line of code to display a list of recently updated documents in MkDocs
 
 ## Features
 
-- Display recently updated documents in reverse chronological order
+- Display recently updated documents in descending order of update time
 - Support exclude specified files or folders
 - Support custom display quantity
 - Support custom rendering template
