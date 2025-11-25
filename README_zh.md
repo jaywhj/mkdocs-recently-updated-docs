@@ -41,7 +41,7 @@ plugins:
       limit: 10          # 限制显示的文档数量
       exclude:           # 排除文件列表
         - index.md       # 排除指定文件
-        - drafts/*       # 排除 drafts 目录下所有文件，包括子目录
+        - blog/*         # 排除 blog 目录下所有文件，包括子目录
       template: templates/recently_updated_list.html    # 自定义渲染模板
 ```
 

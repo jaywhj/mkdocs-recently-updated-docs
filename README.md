@@ -41,7 +41,7 @@ plugins:
       limit: 10          # Limit the number of docs displayed
       exclude:           # List of excluded files
         - index.md       # Exclude specific file
-        - drafts/*       # Exclude all files in drafts folder, including subfolders
+        - blog/*         # Exclude all files in blog folder, including subfolders
       template: templates/recently_updated_list.html    # Custom rendering template
 ```
 
