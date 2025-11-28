@@ -24,10 +24,10 @@ class RecentlyUpdatedPlugin(BasePlugin):
 
         docs_dir = Path(config['docs_dir'])
         git_updated_dates = load_git_last_updated_date(docs_dir)
-        recently_modified_files = get_recently_updated_files(git_updated_dates, files, exclude_list, limit, True)
+        recently_updated_data = get_recently_updated_files(git_updated_dates, files, exclude_list, limit, True)
 
         # 渲染HTML
-        self.recent_docs_html = self._render_recently_updated_html(docs_dir, template_path, recently_modified_files)
+        self.recent_docs_html = self._render_recently_updated_html(docs_dir, template_path, recently_updated_data)
 
         return env
 

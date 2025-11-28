@@ -63,6 +63,6 @@ plugins:
 
 [mkdocs-document-dates](https://github.com/jaywhj/mkdocs-document-dates)
 
-新一代 MkDocs 插件，用于显示文档的确切**创建时间、上次更新时间、作者、电子邮件**
+新一代 MkDocs 插件，用于显示文档的确切**创建日期、上次更新日期、作者、电子邮件**
 
 ![render](render.gif)
