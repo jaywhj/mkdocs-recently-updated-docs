@@ -66,3 +66,13 @@ See [templates](https://github.com/jaywhj/mkdocs-recently-updated-docs/tree/main
 A new generation MkDocs plugin for displaying exact **creation date, last updated date, authors, email** of documents
 
 ![render](render.gif)
+
+<br />
+
+## Chat Group
+
+**Discord**: https://discord.gg/cvTfge4AUy
+
+**Wechat**: 
+
+<img src="wechat-group.jpg" width="150" />

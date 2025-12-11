@@ -66,3 +66,13 @@ plugins:
 新一代 MkDocs 插件，用于显示文档的确切**创建日期、上次更新日期、作者、电子邮件**
 
 ![render](render.gif)
+
+<br />
+
+## 交流群
+
+**Discord**: https://discord.gg/cvTfge4AUy
+
+**Wechat**: 
+
+<img src="wechat-group.jpg" width="150" />
