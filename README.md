@@ -75,4 +75,4 @@ A new generation MkDocs plugin for displaying exact **creation date, last update
 
 **Wechat**: 
 
-<img src="wechat-group.jpg" width="150" />
+<img src="wechat-group.jpg" width="140" />
