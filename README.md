@@ -4,7 +4,7 @@ English | [简体中文](README_zh.md)
 
 <br />
 
-Display a list of recently updated documents anywhere on your MkDocs site with a single line of code. This is ideal for sites with a large number of documents, so that readers can quickly see what's new.
+Display a list of recently updated documents anywhere on your MkDocs site with a single line of code. This is ideal for sites **with a large number of documents**, so that **readers can quickly see what's new**.
 
 ## Features
 
