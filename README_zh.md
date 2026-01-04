@@ -59,13 +59,14 @@ plugins:
 
 <br />
 
-## 其它插件
+## 其他项目
 
-[mkdocs-document-dates](https://github.com/jaywhj/mkdocs-document-dates)
+- [**MaterialX**](https://github.com/jaywhj/mkdocs-materialx)，下一代 mkdocs-material，基于 `mkdocs-material-9.7.0` 衍生，取名为 `X`，我将继续维护此分支（因为 mkdocs-material 将停止维护）
+目前已发布的更新，重构和添加了很多新功能，详情见 https://github.com/jaywhj/mkdocs-materialx/releases/
 
-新一代 MkDocs 插件，用于显示文档的确切**创建日期、上次更新日期、作者、电子邮件**
+- [**mkdocs-document-dates**](https://github.com/jaywhj/mkdocs-document-dates)，新一代 MkDocs 插件，用于显示文档的确切**创建日期、上次更新日期、作者、电子邮件**
 
-![render](render.gif)
+  ![render](render.gif)
 
 <br />
 

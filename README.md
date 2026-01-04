@@ -59,13 +59,14 @@ See [templates](https://github.com/jaywhj/mkdocs-recently-updated-docs/tree/main
 
 <br />
 
-## Other plugins
+## Other Projects
 
-[mkdocs-document-dates](https://github.com/jaywhj/mkdocs-document-dates)
+- [**MaterialX**](https://github.com/jaywhj/mkdocs-materialx), the next generation of mkdocs-material, is based on `mkdocs-material-9.7.0` and is named `X`. I'll be maintaining this branch continuously (since mkdocs-material will stop being maintained). 
+Updates have been released that refactor and add a lot of new features, see https://github.com/jaywhj/mkdocs-materialx/releases/
 
-A new generation MkDocs plugin for displaying exact **creation date, last updated date, authors, email** of documents
+- [**mkdocs-document-dates**](https://github.com/jaywhj/mkdocs-document-dates), a new generation MkDocs plugin for displaying exact **creation date, last updated date, authors, email** of documents
 
-![render](render.gif)
+  ![render](render.gif)
 
 <br />
 
