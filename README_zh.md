@@ -17,7 +17,7 @@
 
 ## 预览
 
-![recently-updated](recently-updated.png)
+![recently-updated](recently-updated-zh.gif)
 
 ## 安装
 

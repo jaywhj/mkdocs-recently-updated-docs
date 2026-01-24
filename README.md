@@ -17,7 +17,7 @@ Display a list of recently updated documents anywhere on your MkDocs site with a
 
 ## Preview
 
-![recently-updated](recently-updated.png)
+![recently-updated](recently-updated-en.gif)
 
 ## Installation
 
