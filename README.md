@@ -9,7 +9,7 @@ Display a list of recently updated documents anywhere on your MkDocs site with a
 ## Features
 
 - Display recently updated documents in descending order by update time, list items are dynamically updated
-- Support multiple view modes such as list, detail and grid
+- Support multiple view modes including list, detail and grid
 - Support automatic extraction of article summaries
 - Support custom display quantity
 - Support exclude specified files or folders
