@@ -8,8 +8,7 @@ from mkdocs_document_dates.utils import load_git_last_updated_date, get_recently
 class RecentlyUpdatedPlugin(BasePlugin):
     config_scheme = (
         ('limit', config_options.Type(int, default=10)),
-        ('exclude', config_options.Type(list, default=[])),
-        ('template', config_options.Type(str, default=''))
+        ('exclude', config_options.Type(list, default=[]))
     )
 
     def __init__(self):
@@ -20,31 +19,20 @@ class RecentlyUpdatedPlugin(BasePlugin):
     def on_env(self, env, config, files):
         limit = self.config.get('limit')
         exclude_list = self.config.get('exclude')
-        template_path = self.config.get('template')
 
         docs_dir = Path(config['docs_dir'])
         git_updated_dates = load_git_last_updated_date(docs_dir)
         recently_updated_data = get_recently_updated_files(git_updated_dates, files, exclude_list, limit, True)
 
         # 渲染HTML
-        self.recent_docs_html = self._render_recently_updated_html(docs_dir, template_path, recently_updated_data)
+        self.recent_docs_html = self._render_recently_updated_html(recently_updated_data)
 
         return env
 
-    def _render_recently_updated_html(self, docs_dir, template_path, recently_updated_data):
-        # 获取自定义模板路径
-        if template_path:
-            user_full_path = docs_dir / template_path
-
-        # 选择模板路径
-        if template_path and user_full_path.is_file():
-            template_dir = user_full_path.parent
-            template_file = user_full_path.name
-        else:
-            # 默认模板路径
-            default_template_path = Path(__file__).parent / 'templates' / 'recently_updated_list.html'
-            template_dir = default_template_path.parent
-            template_file = default_template_path.name
+    def _render_recently_updated_html(self, recently_updated_data):
+        default_template_path = Path(__file__).parent / 'templates' / 'recently_updated_group.html'
+        template_dir = default_template_path.parent
+        template_file = default_template_path.name
 
         # 加载模板
         env = Environment(

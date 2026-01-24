@@ -8,10 +8,11 @@ Display a list of recently updated documents anywhere on your MkDocs site with a
 
 ## Features
 
-- Display recently updated documents in descending order of update time
-- Support exclude specified files or folders
+- Display recently updated documents in descending order by update time, list items are dynamically updated
+- Support multiple view modes such as list, detail and grid
+- Support automatic extraction of article summaries
 - Support custom display quantity
-- Support custom rendering template
+- Support exclude specified files or folders
 - Works well for any environment (no-Git, Git, Docker, all CI/CD build systems, etc.)
 
 ## Preview
@@ -42,7 +43,6 @@ plugins:
       exclude:           # List of excluded files
         - index.md       # Exclude specific file
         - blog/*         # Exclude all files in blog folder, including subfolders
-      template: templates/recently_updated_list.html    # Custom rendering template
 ```
 
 ## Usage
@@ -53,16 +53,14 @@ Simply write this line anywhere in your md document:
 <!-- RECENTLY_UPDATED_DOCS -->
 ```
 
-## Custom template
-
-See [templates](https://github.com/jaywhj/mkdocs-recently-updated-docs/tree/main/mkdocs_recently_updated_docs/templates) directory
-
 <br />
 
 ## Other Projects
 
 - [**MaterialX**](https://github.com/jaywhj/mkdocs-materialx), the next generation of mkdocs-material, is based on `mkdocs-material-9.7.0` and is named `X`. I'll be maintaining this branch continuously (since mkdocs-material will stop being maintained). 
 Updates have been released that refactor and add a lot of new features, see https://github.com/jaywhj/mkdocs-materialx/releases/
+
+<br />
 
 - [**mkdocs-document-dates**](https://github.com/jaywhj/mkdocs-document-dates), a new generation MkDocs plugin for displaying exact **creation date, last updated date, authors, email** of documents
 

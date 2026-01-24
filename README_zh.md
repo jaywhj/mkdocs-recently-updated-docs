@@ -8,10 +8,11 @@
 
 ## 特性
 
-- 按更新时间降序显示最近更新的文档
-- 支持排除指定文件或目录
+- 按更新时间降序显示最近更新的文档，列表项动态更新
+- 支持列表、详情、网格等多种视图模式
+- 支持自动提取文章摘要
 - 支持自定义显示数量
-- 支持自定义渲染模板
+- 支持排除指定文件或目录
 - 适用于任何环境（no-Git, Git, Docker, all CI/CD build systems, etc.）
 
 ## 预览
@@ -42,7 +43,6 @@ plugins:
       exclude:           # 排除文件列表
         - index.md       # 排除指定文件
         - blog/*         # 排除 blog 目录下所有文件，包括子目录
-      template: templates/recently_updated_list.html    # 自定义渲染模板
 ```
 
 ## 使用方法
@@ -53,16 +53,14 @@ plugins:
 <!-- RECENTLY_UPDATED_DOCS -->
 ```
 
-## 自定义模板
-
-请参阅 [templates](https://github.com/jaywhj/mkdocs-recently-updated-docs/tree/main/mkdocs_recently_updated_docs/templates) 目录
-
 <br />
 
 ## 其他项目
 
 - [**MaterialX**](https://github.com/jaywhj/mkdocs-materialx)，下一代 mkdocs-material，基于 `mkdocs-material-9.7.0` 衍生，取名为 `X`，我将继续维护此分支（因为 mkdocs-material 将停止维护）
 目前已发布的更新，重构和添加了很多新功能，详情见 https://github.com/jaywhj/mkdocs-materialx/releases/
+
+<br />
 
 - [**mkdocs-document-dates**](https://github.com/jaywhj/mkdocs-document-dates)，新一代 MkDocs 插件，用于显示文档的确切**创建日期、上次更新日期、作者、电子邮件**
 
