@@ -56,7 +56,7 @@ Simply write this line anywhere in your md document:
 
 ## Configuring Article Cover
 
-Use the field `cover` in Front Matter to specify the article cover, which supports URL paths and local file paths
+Use the field `cover` in Front Matter to specify the article cover, which supports URL paths and local file paths, for example:
 
 ```yaml
 ---

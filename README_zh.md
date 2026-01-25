@@ -56,7 +56,7 @@ plugins:
 
 ## 配置文章封面
 
-在 Front Matter 中使用字段 `cover` 指定文章封面图，支持 URL 路径和本地文件路径
+在 Front Matter 中使用字段 `cover` 指定文章封面，支持 URL 路径和本地文件路径，比如像这样：
 
 ```yaml
 ---
