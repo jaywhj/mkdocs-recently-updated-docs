@@ -54,7 +54,7 @@ Simply write this line anywhere in your md document:
 <!-- RECENTLY_UPDATED_DOCS -->
 ```
 
-## Configuring Article Cover
+## Configuring article cover
 
 Use the field `cover` in Front Matter to specify the article cover, which supports URL paths and local file paths, for example:
 
@@ -66,7 +66,7 @@ cover: assets/cat.jpg
 
 <br />
 
-## Other Projects
+## Other projects
 
 - [**MaterialX**](https://github.com/jaywhj/mkdocs-materialx), the next generation of mkdocs-material, is based on `mkdocs-material-9.7.0` and is named `X`. I'll be maintaining this branch continuously (since mkdocs-material will stop being maintained). 
 Updates have been released that refactor and add a lot of new features, see https://github.com/jaywhj/mkdocs-materialx/releases/
