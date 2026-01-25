@@ -11,6 +11,7 @@ Display a list of recently updated documents anywhere on your MkDocs site with a
 - Display recently updated documents in descending order by update time, list items are dynamically updated
 - Support multiple view modes including list, detail and grid
 - Support automatic extraction of article summaries
+- Support for customizing article cover in Front Matter
 - Support custom display quantity
 - Support exclude specified files or folders
 - Works well for any environment (no-Git, Git, Docker, all CI/CD build systems, etc.)
@@ -49,8 +50,18 @@ plugins:
 
 Simply write this line anywhere in your md document:
 
-```markdown
+```html
 <!-- RECENTLY_UPDATED_DOCS -->
+```
+
+## Configuring Article Cover
+
+Use the field `cover` in Front Matter to specify the article cover, which supports URL paths and local file paths
+
+```yaml
+---
+cover: assets/cat.jpg
+---
 ```
 
 <br />
