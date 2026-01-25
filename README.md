@@ -54,7 +54,7 @@ Simply write this line anywhere in your md document:
 <!-- RECENTLY_UPDATED_DOCS -->
 ```
 
-## Configuring article cover
+## Configure article cover
 
 Use the field `cover` in Front Matter to specify the article cover, which supports URL paths and local file paths, for example:
 
