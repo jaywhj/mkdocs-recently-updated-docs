@@ -41,8 +41,9 @@ Or, full configuration:
 plugins:
   - recently-updated:
       limit: 10          # Limit the number of docs displayed
-      exclude:           # List of excluded files
+      exclude:           # List of excluded files (support unix shell-style wildcards)
         - index.md       # Exclude specific file
+        - '*/index.md'   # Exclude all index.md files in any subfolders
         - blog/*         # Exclude all files in blog folder, including subfolders
 ```
 

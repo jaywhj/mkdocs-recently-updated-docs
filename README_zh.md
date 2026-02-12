@@ -41,8 +41,9 @@ plugins:
 plugins:
   - recently-updated:
       limit: 10          # 限制显示的文档数量
-      exclude:           # 排除文件列表
+      exclude:           # 排除文件列表（支持 unix shell 样式的通配符）
         - index.md       # 排除指定文件
+        - '*/index.md'   # 排除所有子目录下的 index.md 文件
         - blog/*         # 排除 blog 目录下所有文件，包括子目录
 ```
 
