@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "mkdocs-recently-updated-docs"
-version = "1.5"
+version = "1.6"
 authors = [
     {name = "Aaron Wang", email = "aaronwqt@gmail.com"},
 ]
