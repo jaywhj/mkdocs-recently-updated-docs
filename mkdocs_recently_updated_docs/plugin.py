@@ -2,7 +2,7 @@ from jinja2 import Environment, FileSystemLoader, select_autoescape
 from pathlib import Path
 from mkdocs.plugins import BasePlugin
 from mkdocs.config import config_options
-from mkdocs_document_dates.utils import load_git_last_updated_date, get_recently_updated_files
+from mkdocs_document_dates.utils import load_git_last_updated_date, compile_exclude_patterns, get_recently_updated_files
 
 
 class RecentlyUpdatedPlugin(BasePlugin):
@@ -22,7 +22,8 @@ class RecentlyUpdatedPlugin(BasePlugin):
 
         docs_dir = Path(config['docs_dir'])
         git_updated_dates = load_git_last_updated_date(docs_dir)
-        recently_updated_data = get_recently_updated_files(git_updated_dates, files, exclude_list, limit, True)
+        recent_exclude_patterns = compile_exclude_patterns(exclude_list)
+        recently_updated_data = get_recently_updated_files(git_updated_dates, files, recent_exclude_patterns, limit, True)
 
         # 渲染HTML
         self.recent_docs_html = self._render_recently_updated_html(recently_updated_data)
