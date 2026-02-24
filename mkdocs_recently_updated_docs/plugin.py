@@ -3,7 +3,7 @@ from pathlib import Path
 from mkdocs.plugins import BasePlugin
 from mkdocs.config import config_options
 from mkdocs_document_dates.utils import load_git_last_updated_date, compile_exclude_patterns, get_recently_updated_files
-
+import shutil
 
 class RecentlyUpdatedPlugin(BasePlugin):
     config_scheme = (
@@ -15,6 +15,13 @@ class RecentlyUpdatedPlugin(BasePlugin):
         super().__init__()
 
         self.recent_docs_html = None
+
+    def on_config(self, config):
+        material_icons_url = 'https://fonts.googleapis.com/icon?family=Material+Icons'
+        config['extra_css'].append(material_icons_url)
+        config['extra_javascript'].append('assets/recently-updated/layout_switcher.js')
+
+        return config
 
     def on_env(self, env, config, files):
         limit = self.config.get('limit')
@@ -49,3 +56,11 @@ class RecentlyUpdatedPlugin(BasePlugin):
         if '\n<!-- RECENTLY_UPDATED_DOCS -->' in output:
             output = output.replace('\n<!-- RECENTLY_UPDATED_DOCS -->', self.recent_docs_html or '')
         return output
+
+    def on_post_build(self, config):
+        document_dates = config['plugins'].get('document-dates')
+        if not document_dates:
+            site_dest_dir = Path(config['site_dir']) / 'assets' / 'recently-updated'
+            site_dest_dir.mkdir(parents=True, exist_ok=True)
+            source_dir = Path(__file__).parent / 'templates' / 'layout_switcher.js'
+            shutil.copy2(source_dir, site_dest_dir)
