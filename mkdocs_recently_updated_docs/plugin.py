@@ -19,7 +19,9 @@ class RecentlyUpdatedPlugin(BasePlugin):
     def on_config(self, config):
         material_icons_url = 'https://fonts.googleapis.com/icon?family=Material+Icons'
         config['extra_css'].append(material_icons_url)
-        config['extra_javascript'].append('assets/recently-updated/layout_switcher.js')
+
+        if not config['plugins'].get('document-dates'):
+            config['extra_javascript'].append('assets/recently-updated/layout_switcher.js')
 
         return config
 
@@ -58,8 +60,7 @@ class RecentlyUpdatedPlugin(BasePlugin):
         return output
 
     def on_post_build(self, config):
-        document_dates = config['plugins'].get('document-dates')
-        if not document_dates:
+        if not config['plugins'].get('document-dates'):
             site_dest_dir = Path(config['site_dir']) / 'assets' / 'recently-updated'
             site_dest_dir.mkdir(parents=True, exist_ok=True)
             source_dir = Path(__file__).parent / 'templates' / 'layout_switcher.js'
