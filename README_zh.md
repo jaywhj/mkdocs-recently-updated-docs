@@ -4,7 +4,7 @@
 
 <br />
 
-仅需一行代码，即可在你的 MkDocs 站点的任意位置显示最近更新的文档列表。这特别适合**拥有大量文档的站点**，方便读者**快速浏览新内容**。
+仅需一行代码，即可在你的 MkDocs 站点的任意位置显示最近更新的文档列表。最新更新模块会以结构化的方式展示站点的文档信息，这非常适合**文档数量众多或更新频繁**的网站，这样读者可以**快速查看最新内容**。
 
 ## 特性
 
@@ -57,7 +57,7 @@ plugins:
 
 ## 配置文章封面
 
-在 Front Matter 中使用字段 `cover` 指定文章封面，支持 URL 路径和本地文件路径，比如像这样：
+在 Front Matter 中使用字段 `cover` 指定文章封面（支持 URL 路径和本地文件路径）：
 
 ```yaml
 ---
@@ -69,7 +69,7 @@ cover: assets/cat.jpg
 
 ## 其他项目
 
-- [**MaterialX**](https://github.com/jaywhj/mkdocs-materialx)，下一代 mkdocs-material，基于 `mkdocs-material-9.7.0` 衍生，取名为 `X`，我将继续维护此分支（因为 mkdocs-material 将停止维护）
+- [**MaterialX**](https://github.com/jaywhj/mkdocs-materialx)，下一代 mkdocs-material，让你继续用熟悉的方式构建漂亮站点。基于 `mkdocs-material-9.7.1` 衍生，取名为 `X`，提供持续的维护与更新（因为 mkdocs-material 将停止维护）
 目前已发布的更新，重构和添加了很多新功能，详情见 https://github.com/jaywhj/mkdocs-materialx/releases/
 
 <br />

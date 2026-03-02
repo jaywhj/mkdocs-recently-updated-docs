@@ -4,7 +4,7 @@ English | [简体中文](README_zh.md)
 
 <br />
 
-Display a list of recently updated documents anywhere on your MkDocs site with a single line of code. This is ideal for sites **with a large number of documents**, so that **readers can quickly see what's new**.
+Display a list of recently updated documents anywhere on your MkDocs site with a single line of code. The recent updates module displays site documentation information in a structured way, which is ideal for sites with **a large number of documents or frequent updates**, allowing readers to **quickly see what's new**.
 
 ## Features
 
@@ -57,7 +57,7 @@ Simply write this line anywhere in your md document:
 
 ## Configure article cover
 
-Use the field `cover` in Front Matter to specify the article cover, which supports URL paths and local file paths, for example:
+Use the field `cover` in Front Matter to specify the article cover (supports URL paths and local file paths):
 
 ```yaml
 ---
@@ -69,7 +69,7 @@ cover: assets/cat.jpg
 
 ## Other projects
 
-- [**MaterialX**](https://github.com/jaywhj/mkdocs-materialx), the next generation of mkdocs-material, is based on `mkdocs-material-9.7.0` and is named `X`. I'll be maintaining this branch continuously (since mkdocs-material will stop being maintained). 
+- [**MaterialX**](https://github.com/jaywhj/mkdocs-materialx), the next generation of mkdocs-material. Build beautiful sites the way you already know and love. Based on `mkdocs-material-9.7.1` and is named `X`, it provides ongoing maintenance and updates (since mkdocs-material will stop being maintained).
 Updates have been released that refactor and add a lot of new features, see https://github.com/jaywhj/mkdocs-materialx/releases/
 
 <br />
