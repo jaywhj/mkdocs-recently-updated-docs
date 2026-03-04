@@ -56,7 +56,7 @@
     border: 1px solid rgba(142, 142, 142, 0.2);
     border-radius: 8px;
     row-gap: 0;
-    padding: 11px;
+    padding: 12px;
 }
 .article-grid.is-list .card-body {
     display: none;
@@ -94,7 +94,7 @@
 .card-header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
     text-decoration: none;
 }
 .card-title {
@@ -108,10 +108,10 @@
     color: rgba(100, 100, 100, 0.4);
     white-space: nowrap;
     margin-right: 10px;
+    /* 补偿 baseline 布局时字体度量的误差 */
+    transform: translateY(-1px);
 }
-.card-header:hover {
-    text-decoration: none !important;
-}
+.card-header:hover,
 .card-header:focus {
     text-decoration: none !important;
 }
@@ -154,9 +154,9 @@
     transition: filter 0.3s ease;
 
     /* Safari 圆角闪烁修复 */
-    transform: translateZ(0);              /* 建立独立合成层 */
-    will-change: transform;                /* 提前告诉浏览器 */
-    -webkit-mask-image: -webkit-radial-gradient(white, black); /* 强制圆角裁剪走 mask 管线 */
+    transform: translateZ(0);
+    will-change: transform;
+    -webkit-mask-image: -webkit-radial-gradient(white, black);
     isolation: isolate;
 }
 .card-cover:hover {
