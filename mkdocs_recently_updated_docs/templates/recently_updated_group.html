@@ -192,7 +192,7 @@
 </div>
 
 <div class="article-grid">
-    {%- for mtime, rel_path, title, url, cover, summary in recent_docs %}
+    {%- for mtime, rel_path, title, url, cover, summary, readtime, tags in recent_docs %}
     <div class="article-card">
         <a class="card-header" href="{{ url }}" target="_blank">
             <div class="card-title">{{ title }}</div>
