@@ -18,7 +18,7 @@ classifiers = [
 ]
 dependencies = [
     "mkdocs>=1.6,<=1.6.1",
-    "mkdocs-document-dates>=3.7.1",
+    "mkdocs-document-dates>=3.7.4",
 ]
 
 [project.entry-points."mkdocs.plugins"]

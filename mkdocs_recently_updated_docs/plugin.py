@@ -4,6 +4,7 @@ from mkdocs.plugins import BasePlugin
 from mkdocs.config import config_options
 from mkdocs_document_dates.utils import load_git_last_updated_dates, compile_exclude_patterns, get_recently_updated_files
 import shutil
+from urllib.parse import urlparse
 
 class RecentlyUpdatedPlugin(BasePlugin):
     config_scheme = (
@@ -29,10 +30,15 @@ class RecentlyUpdatedPlugin(BasePlugin):
         limit = self.config.get('limit')
         exclude_list = self.config.get('exclude')
 
+        # 获取站点 URL 路径前缀
+        site_url = config.get("site_url", "")
+        base_path = urlparse(site_url).path.rstrip("/")
+        prefix = f"{base_path}/" if base_path else "/"
+
         docs_dir = Path(config['docs_dir'])
         git_updated_dates = load_git_last_updated_dates(docs_dir)
         recent_exclude_patterns = compile_exclude_patterns(exclude_list)
-        recently_updated_data = get_recently_updated_files(git_updated_dates, files, recent_exclude_patterns, limit, True)
+        recently_updated_data = get_recently_updated_files(git_updated_dates, files, recent_exclude_patterns, limit, True, prefix=prefix)
 
         if not config.get('extra', {}).get("recently_updated_docs", {}):
             config['extra']['recently_updated_docs'] = recently_updated_data
